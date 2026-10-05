@@ -1,0 +1,76 @@
+{
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "checks": {
+    "wrong-endian": {
+      "exit": 1,
+      "assertion_failures": 7
+    },
+    "length-limit": {
+      "exit": 1,
+      "assertion_failures": 3
+    },
+    "normal": {
+      "exit": 0
+    },
+    "optimized": {
+      "exit": 0
+    },
+    "compile": {
+      "exit": 0
+    },
+    "bandit": {
+      "exit": 0
+    }
+  },
+  "demos": {
+    "coalesced.json": {
+      "exit": 0,
+      "state": "closed",
+      "accepted_frames": 2
+    },
+    "empty.json": {
+      "exit": 0,
+      "state": "closed",
+      "accepted_frames": 0
+    },
+    "open.json": {
+      "exit": 0,
+      "state": "need_payload",
+      "accepted_frames": 0
+    },
+    "partial-header.json": {
+      "exit": 3,
+      "state": "failed",
+      "accepted_frames": 0
+    },
+    "partial-payload.json": {
+      "exit": 3,
+      "state": "failed",
+      "accepted_frames": 0
+    },
+    "prefix-failure.json": {
+      "exit": 3,
+      "state": "failed",
+      "accepted_frames": 1
+    },
+    "split.json": {
+      "exit": 0,
+      "state": "closed",
+      "accepted_frames": 2
+    }
+  },
+  "source_restored": true,
+  "sha256": {
+    "framing_lab.py": "a34dd81233736b17d3bf7a091f5267cfdf14f251f15c8f25c61063b2408e1f39",
+    "tests/test_framing_lab.py": "e31fb8963bc77108278de527b3e3f1a2597151fa9c573314ae88751ddcf51bc6",
+    "verification/verify.py": "0dfbf2fdf3952640c2d4b9b155a2a5c379189676c559ee40a876acfca9e33b27",
+    "SCHEMA.md": "7935177a9076135a94339416363f0c2f93680d0700883902c407719da058af6b",
+    "examples/coalesced.json": "40867a717c2000e3960685fd8ad1b381845dad9d3ca55d572ec7d46e73bfc628",
+    "examples/empty.json": "7aa1b463add6508d0cfcf94987d076082efbda6934385d5b487448576cd3ab5d",
+    "examples/open.json": "ffe8c117fbbbe2ada3676ceffb777cc77121dc2dcc2e27ca3188f8b2e7f02325",
+    "examples/partial-header.json": "d46a55c8037a7bf0778d131579d6dc53259e04cced132c9f7609e69f31e96500",
+    "examples/partial-payload.json": "7bc1c8bd69e1b05074c5273d7cea069b4c9e18b220a1cbc2dc8a458ed4ed381a",
+    "examples/prefix-failure.json": "3e776c0b4b2ab632c268767d2cf6108b416d51ab887f37ec3c1349f82ca9af16",
+    "examples/split.json": "eda9aa5e8d2db90a23c109129ed20ddb1476418587315b598df9ae2417bcd96e"
+  }
+}
